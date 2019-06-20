@@ -1,0 +1,51 @@
+	<div class="title">
+		 <h1>collection</h1>
+	     <h1><%= link_to "back", top_path %></h1>
+	</div>
+
+<div class="image-area">
+ <div class="tab_wrap">
+			<div class="tab_area">
+				<label class="tab1_label switch_tab" for="tab1">AIR JORDAN</label>
+				<label class="tab2_label switch_tab" for="tab2">sneaker</label>
+				<label class="tab3_label switch_tab" for="tab3">sacai</label>
+			</div>
+	<div class="panel_area">
+		    <div id="panel1" class="tab_panel">
+				<div class="image"></div>
+				 <h2>PATTA × NIKE AIR JORDAN 7 RETRO</h2>
+				<div class="image2"></div>
+				 <h2>NIKE SB × AIR JORDAN 1 RETRO HIGH OG DEFIANT LAKERS</h2>
+		        <div class="image3"></div>
+		         <h2>NIKE SB × AIR JORDAN 1 HIGH OG DEFIANT LIGHT BORN</h2>
+		        <div class="image6"></div>
+		         <h2>NIKE AIR JORDAN 4 BRED</h2>
+		        <div class="image8"></div>
+		         <h2>NIKE AIR JORDAN 1 RETRO HIGH OG SAIL / UNIVERSITY RED</h2>
+		        <div class="image9"></div>
+		         <h2>NIKE AIR JORDAN 1 RETRO HIGH OG CRIMSON TINT</h2>
+			</div>
+			<div id="panel2" class="tab_panel">
+				<div class="image4"></div>
+		         <h2>NIKE AIR MAX 1 “TOKYO MAZE”</h2>
+		        <div class="image7"></div>
+		         <h2>CARHARTT WIP × NIKE AIR FORCE 1</h2>
+			</div>
+			<div id="panel3" class="tab_panel">
+				<div class="image5"></div>
+		         <h2>sacai × NIKE BLAZER MID</h2>
+			</div>
+	</div>
+ </div>
+
+	</div>
+<script>
+$(".switch_tab").on("click",function(){
+	var $th = $(this).index();
+	$(".switch_tab").removeClass("active");
+	$(".tab_panel").removeClass("active");
+	$(this).addClass("active");
+	$(".tab_panel").eq($th).addClass("active");
+});
+</script>
+
